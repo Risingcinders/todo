@@ -11,12 +11,10 @@ function App() {
         setVarObj([...varObj, { banana: athingy }]);
     };
 
-    const removeItem = (e, index) => {
+    const removeItem = (index) => {
         let temp = [...varObj];
-        console.log(temp);
         console.log(index);
         temp.splice(index, 1);
-        console.log(temp);
         setVarObj(temp);
     };
 
@@ -28,8 +26,8 @@ function App() {
                     return (
                         <ListItem
                             key={index}
-                            removeStateprop={(e) => {
-                                removeItem(e, index);
+                            removeStateprop={() => {
+                                removeItem(index);
                             }}
                             goal={arrobj.banana}
                         ></ListItem>

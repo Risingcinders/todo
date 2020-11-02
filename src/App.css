@@ -1,5 +1,16 @@
-.app{
+* {
+  /* border: dotted 1px red; */
+  padding: 0px;
+  margin: 0px;
+}
+
+
+.App {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 900px;
   margin: auto;
 }
+
+
